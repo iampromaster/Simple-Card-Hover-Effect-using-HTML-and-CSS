@@ -1,0 +1,84 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 320px;
+  height: 500px;
+  background: red;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  filter: brightness(0.5);
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: #1f3d4730;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  left: 0;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
+}
+.content h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 40px 0;
+}
+
+.content button {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
